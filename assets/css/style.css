@@ -531,6 +531,11 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-item::before {
@@ -545,6 +550,7 @@ main {
 .service-icon-box { margin-bottom: 10px; }
 
 .service-icon-box img { margin: auto; }
+.service-icon-box svg { margin: auto; }
 
 .service-content-box { text-align: center; }
 
@@ -555,6 +561,12 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+}
+
+.service-icon {
+  width: 100%;
+  max-width: 40px; /* same as your old img */
+  height: auto;
 }
 
 
@@ -758,18 +770,7 @@ main {
 
 .clients-item img:hover { filter: grayscale(0); }
 
-.clients-items {
-  min-width: 50%;
-  scroll-snap-align: start;
-}
 
-.clients-items img {
-  width: 28%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
-}
-
-.clients-items img:hover { filter: grayscale(0); }
 
 
 
